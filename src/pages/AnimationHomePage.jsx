@@ -16,7 +16,7 @@ import storyPhoto from "../assets/BBSCART.JPG"; // example: your profile image
 import storyDesk from "../assets/AIAgent.JPG"; // example: your desk image
 import Bbscart from "../assets/BBSCART.JPG"; // Update path based on your file structure
 import Delivery from "../assets/Delivery.JPG"; // Update path based on your file structure
-import CRM from "../assets/CRM.SVG"; // Update path based on your file structure
+import CRM from "../assets/CRM.svg"; // Update path based on your file structure
 import EDelivery from "../assets/BBS-EDelivery.SVG"; // Update path based on your file structure
 import EmerJobs from "../assets/Emerjobs.SVG"; // Update path based on your file structure
 import PE from "../assets/POS-ERP.SVG"; // Update path based on your file structure
