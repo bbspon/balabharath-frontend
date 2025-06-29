@@ -1,7 +1,7 @@
 // components/NavbarCommon.jsx
 import React, { useState, useEffect } from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import logo from "../assets/Logo.PNG"; // Update path based on your file structureimport "bootstrap/dist/css/bootstrap.min.css";
+import logo from "../assets/Logo.png"; // Update path based on your file structureimport "bootstrap/dist/css/bootstrap.min.css";
 import useAuth from "../hooks/useAuth";
 import "./HomePage.css";
 
