@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import AnimatedSection from "../AnimatedSection";
 import HeroVideo from "../assets/HeroVideo.mp4";
-import logo from "../assets/Logo.png"; // Update path based on your file structure
+import logo from "../assets/logo.png"; // Update path based on your file structure
 import CarouselImage1 from "../assets/CarouselImage1.JPG";
 import CarouselImage2 from "../assets/CarouselImage2.JPG";
 import image1 from "../assets/Pose1.JPG";
