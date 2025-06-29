@@ -1,0 +1,6 @@
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-link {
+  color: #ffaf02 !important; /* Dark blue from your logo */
+  font-weight: 600;
+}

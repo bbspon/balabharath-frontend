@@ -1,0 +1,88 @@
+/* Shared underline animation for all navbar links */
+.navbar-nav .nav-link,
+.custom-dropdown .dropdown-toggle span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.navbar-brand img {
+  vertical-align: middle;
+}
+.custom-caption-top-left {
+  top: 20% !important;        /* Move upward */
+  left: 10% !important;       /* Move leftward */
+  right: auto !important;     /* Disable right alignment */
+  bottom: auto !important;    /* Disable bottom alignment */
+  text-align: left;
+}
+.carousel-wrapper {
+  max-width: 500px;    /* Adjust size here */
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.custom-caption-top-right {
+  top: 20% !important;
+  right: 10% !important;
+  left: auto !important;
+  bottom: auto !important;
+  text-align: right;
+}
+
+.custom-caption-top-right .d-inline-block {
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: contrast background */
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.navbar-nav .nav-link::after,
+.custom-dropdown .dropdown-toggle span::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.custom-dropdown .dropdown-toggle span:hover::after {
+  width: 100%;
+}
+
+/* Optional: remove dropdown arrow */
+.custom-dropdown .dropdown-toggle::after {
+  display: none !important;
+}
+
+/* CarouselAnimation.css */
+@keyframes zoomFade {
+  0% {
+    transform: scale(1.05);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zoom-img {
+  animation: zoomFade 1s ease-in-out;
+}
+
+.carousel-caption-custom {
+  animation: slideFadeUp 1s ease-in-out;
+}

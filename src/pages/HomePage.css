@@ -1,0 +1,23 @@
+.navbar-link:hover,
+.navbar-link:focus,
+.navbar-link:active {
+  color: #ffaf02 !important; /* Dark blue from your logo */
+  font-weight: 600;
+}
+/* Add this to your CSS file or inside a <style> tag */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-img {
+  animation: zoomInOut 10s ease-in-out infinite;
+  transition: transform 0.5s ease-in-out;
+}
