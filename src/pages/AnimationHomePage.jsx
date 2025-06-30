@@ -17,11 +17,11 @@ import storyDesk from "../assets/AIAgent.JPG"; // example: your desk image
 import Bbscart from "../assets/BBSCART.JPG"; // Update path based on your file structure
 import Delivery from "../assets/Delivery.JPG"; // Update path based on your file structure
 import CRM from "../assets/CRM.svg"; // Update path based on your file structure
-import EDelivery from "../assets/BBS-EDelivery.SVG"; // Update path based on your file structure
-import EmerJobs from "../assets/Emerjobs.SVG"; // Update path based on your file structure
-import PE from "../assets/POS-ERP.SVG"; // Update path based on your file structure
-import Agent from "../assets/Agent.SVG"; // Update path based on your file structure
-import Nuru from "../assets/NURU.SVG"; // Update path based on your file structure
+import EDelivery from "../assets/BBS-EDelivery.svg"; // Update path based on your file structure
+import EmerJobs from "../assets/Emerjobs.svg"; // Update path based on your file structure
+import PE from "../assets/POS-ERP."; // Update path based on your file structure
+import Agent from "../assets/Agent.svg"; // Update path based on your file structure
+import Nuru from "../assets/NURU.svg"; // Update path based on your file structure
 import BBSCART from "../assets/BBSCART.svg"; // Update path based on your file structure
 import ThiaWorld from "../assets/ThiaWorld.svg"; // Update path based on your file structure
 import Golldex from "../assets/Golldex.svg"; // Update path based on your file structure
