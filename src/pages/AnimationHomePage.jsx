@@ -19,7 +19,7 @@ import Delivery from "../assets/Delivery.JPG"; // Update path based on your file
 import CRM from "../assets/CRM.svg"; // Update path based on your file structure
 import EDelivery from "../assets/BBS-EDelivery.svg"; // Update path based on your file structure
 import EmerJobs from "../assets/Emerjobs.svg"; // Update path based on your file structure
-import PE from "../assets/POS-ERP."; // Update path based on your file structure
+import PE from "../assets/POS-ERP.svg"; // Update path based on your file structure
 import Agent from "../assets/Agent.svg"; // Update path based on your file structure
 import Nuru from "../assets/NURU.svg"; // Update path based on your file structure
 import BBSCART from "../assets/BBSCART.svg"; // Update path based on your file structure
