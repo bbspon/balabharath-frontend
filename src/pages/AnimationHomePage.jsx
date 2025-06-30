@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
 import AnimatedSection from "../AnimatedSection";
 import HeroVideo from "../assets/HeroVideo.mp4";
-import logo from "../assets/bbslog.png"; // Update path based on your file structure
+import logo from "../assets/bb.png"; // Update path based on your file structure
 import CarouselImage1 from "../assets/CarouselImage1.JPG";
 import CarouselImage2 from "../assets/CarouselImage2.JPG";
 import image1 from "../assets/Pose1.JPG";
@@ -22,9 +22,9 @@ import EmerJobs from "../assets/Emerjobs.SVG"; // Update path based on your file
 import PE from "../assets/POS-ERP.SVG"; // Update path based on your file structure
 import Agent from "../assets/Agent.SVG"; // Update path based on your file structure
 import Nuru from "../assets/NURU.SVG"; // Update path based on your file structure
-import BBSCART from "../assets/BBSCART.SVG"; // Update path based on your file structure
-import ThiaWorld from "../assets/ThiaWorld.SVG"; // Update path based on your file structure
-import Golldex from "../assets/Golldex.SVG"; // Update path based on your file structure
+import BBSCART from "../assets/BBSCART.svg"; // Update path based on your file structure
+import ThiaWorld from "../assets/ThiaWorld.svg"; // Update path based on your file structure
+import Golldex from "../assets/Golldex.svg"; // Update path based on your file structure
 import useAuth from "../hooks/useAuth";
 
 const splitHeadline = "Build the Future Together".split(" ");
