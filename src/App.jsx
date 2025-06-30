@@ -1,6 +1,6 @@
 import React from 'react'
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MeetPage from './pages/MeetPage';
 import BBSAchievements from './pages/BBSAchievements';
