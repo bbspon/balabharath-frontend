@@ -21,7 +21,7 @@ import EDelivery from "../assets/BBS-EDelivery.svg"; // Update path based on you
 import EmerJobs from "../assets/Emerjobs.svg"; // Update path based on your file structure
 import PE from "../assets/POS-ERP.svg"; // Update path based on your file structure
 import Agent from "../assets/Agent.svg"; // Update path based on your file structure
-import Nuru from "../assets/NURU.svg"; // Update path based on your file structure
+import Nuru from "../assets/Nuru.svg"; // Update path based on your file structure
 import BBSCART from "../assets/BBSCART.svg"; // Update path based on your file structure
 import ThiaWorld from "../assets/ThiaWorld.svg"; // Update path based on your file structure
 import Golldex from "../assets/Golldex.svg"; // Update path based on your file structure

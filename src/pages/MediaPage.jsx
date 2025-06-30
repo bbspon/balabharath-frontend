@@ -4,7 +4,8 @@ import React, { useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Carousel, Modal } from 'react-bootstrap';
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
-import image2 from "../assets/image2.webp"; // adjust path as needed
+import image2 from "../assets/Nuru.svg"; // adjust path as needed
+
 
 const MediaPage = () => {
 //   useEffect(() => {

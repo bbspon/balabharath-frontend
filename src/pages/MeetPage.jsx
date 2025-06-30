@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import AnimatedSection from "../AnimatedSection"; // make sure this path is correct
-import image2 from "../assets/image2.webp"; // adjust path
+import image2 from "../assets/Nuru.svg"; // adjust path
 import NavbarCommon from "./NavbarCommon"; // adjust path as needed
 
 const MeetPage = () => {
