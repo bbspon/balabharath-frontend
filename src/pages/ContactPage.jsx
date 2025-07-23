@@ -3,7 +3,12 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Card, Spinner, Alert } from "react-bootstrap";
 import NavbarCommon from "./NavbarCommon";
+import linkedin from "../assets/linkedin.png"
+import whatsapp from "../assets/Whatsapp.png"
+import instagram from "../assets/instagram.png"
+import youtube from "../assets/youtube.png"
 
+import axios from 'axios'; // Add this at the top
 const ContactPage = () => {
   const fileInputRef = useRef(null);
   const alertRef = useRef(null);
@@ -27,32 +32,38 @@ const ContactPage = () => {
     }
   }, [submitted]);
   
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
 
-    // Normally, send formData to backend via fetch
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-      // Reset form fields
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-        file: null,
-      });
+  try {
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("phone", formData.phone);
+    form.append("subject", formData.subject);
+    form.append("message", formData.message);
+    if (formData.file) {
+      form.append("file", formData.file);
+    }
 
-      // Clear the file input manually
-      if (fileInputRef.current) {
-        fileInputRef.current.value = null;
-      }
-    }, 2000); // simulate delay
-    
-  };
+    const res = await axios.post("http://localhost:5000/api/contact", form, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
 
+    console.log(res.data); // For debug
+    setLoading(false);
+    setSubmitted(true);
+    setFormData({ name: "", email: "", phone: "", subject: "", message: "", file: null });
+    if (fileInputRef.current) fileInputRef.current.value = null;
+  } catch (err) {
+    console.error("Submit Error:", err);
+    setLoading(false);
+    alert("Something went wrong. Please try again.");
+  }
+};
   return (
        <>
       <NavbarCommon />
@@ -214,20 +225,35 @@ const ContactPage = () => {
       </div>
 
       {/* Social Proof Logos */}
-      <Row className="text-center mt-5 mb-4">
-        <Col>
-          <img src="/images/logo1.png" alt="logo1" height="40" />
-        </Col>
-        <Col>
-          <img src="/images/logo2.png" alt="logo2" height="40" />
-        </Col>
-        <Col>
-          <img src="/images/logo3.png" alt="logo3" height="40" />
-        </Col>
-        <Col>
-          <img src="/images/logo4.png" alt="logo4" height="40" />
-        </Col>
-      </Row>
+         <>
+  <h4 className="text-center mt-4">Follow Us on Social Media</h4>
+
+  <Row className="text-center mt-3 mb-4">
+    <Col>
+      <a href="https://www.linkedin.com/in/bala-bharath-jayasingh-77a4bb22/" target="_blank" rel="noopener noreferrer">
+        <img src={linkedin} alt="LinkedIn" height="80" />
+      </a>
+    </Col>
+
+    <Col>
+      <a href="https://wa.me/919600729596" target="_blank" rel="noopener noreferrer">
+        <img src={whatsapp} alt="WhatsApp" height="80" />
+      </a>
+    </Col>
+
+    <Col>
+      <a href="https://www.youtube.com/@BBS_CATALYST" target="_blank" rel="noopener noreferrer">
+        <img src={youtube} alt="YouTube" height="80" />
+      </a>
+    </Col>
+
+    <Col>
+      <a href="https://www.instagram.com/bbscart/" target="_blank" rel="noopener noreferrer">
+        <img src={instagram} alt="Instagram" height="80" />
+      </a>
+    </Col>
+  </Row>
+</>
     </Container>
     </>
   );
